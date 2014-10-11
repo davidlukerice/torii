@@ -680,6 +680,8 @@ define("torii/providers/facebook-connect",
           } else {
             Ember.run(null, reject, response.status);
           }
+        }, {
+          scope: 'email'
         });
       });
     }
